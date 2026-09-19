@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Subtitle Blocker</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1c1e22;
+    --muted: #62666e;
+    --rule: #e4e6ea;
+    --accent: #c2603a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --fg: #e8eaed;
+      --muted: #9aa0aa;
+      --rule: #2a2e35;
+      --accent: #f0956a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 64px 24px 96px; }
+  h1 { font-size: 28px; line-height: 1.25; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); font-size: 14px; margin: 0 0 40px; }
+  h2 { font-size: 17px; margin: 36px 0 10px; letter-spacing: -0.01em; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .lede {
+    border-left: 3px solid var(--accent);
+    padding: 2px 0 2px 16px;
+    margin: 0 0 32px;
+    font-size: 17px;
+  }
+  footer {
+    margin-top: 56px; padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: 14px;
+  }
+  a { color: var(--accent); }
+  .button { display:inline-block; padding:10px 18px; border-radius:8px; background:var(--accent); color:#fff; text-decoration:none; font-weight:600; }
+  kbd { font-family: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Subtitle Blocker Support</h1>
+  <p class="sub">Subtitle Blocker for macOS</p>
+
+  <p class="lede">Found a bug, or have a question or a suggestion? Open a
+  request and it will be answered there.</p>
+
+  <p><a class="button" href="https://github.com/zfl3388/zfl3388.github.io/issues/new?title=%5BSubtitle%20Blocker%5D%20">Contact support</a></p>
+  <p class="sub">Requests are handled through GitHub Issues. A free GitHub
+  account is needed to post one.</p>
+
+  <h2>Getting started</h2>
+  <p>Subtitle Blocker is a menu bar app with no Dock icon. After launching it,
+  look for its icon in the menu bar at the top-right of the screen, and for the
+  bar near the bottom of your display.</p>
+
+  <h2>Common questions</h2>
+  <p><strong>How do I move or resize the bar?</strong><br>
+  Unlock it first, then drag the middle to move it, or drag an edge or corner
+  to resize it. Lock it again when you are done so clicks pass through to your
+  video player.</p>
+
+  <p><strong>How do I unlock a locked bar?</strong><br>
+  Rest the pointer on the bar and click the Unlock button that appears. You can
+  also press <kbd>⌘⇧L</kbd>, or choose Unlock from the menu bar icon.</p>
+
+  <p><strong>Keyboard shortcuts</strong></p>
+  <ul>
+    <li><kbd>⌘⇧L</kbd> — lock or unlock</li>
+    <li><kbd>⌘⇧H</kbd> — hide or show the bars</li>
+    <li>Hold <kbd>⌘⇧P</kbd> — peek at the subtitle underneath</li>
+    <li>Arrow keys while unlocked — nudge the bar; hold <kbd>⇧</kbd> for bigger steps, <kbd>⌥</kbd> to resize</li>
+  </ul>
+
+  <p><strong>Where are opacity, blur and extra bars?</strong><br>
+  In the menu under the menu bar icon.</p>
+
+  <footer><a href="privacy.html">Privacy Policy</a> · <a href="../">All apps</a></footer>
+</main>
+</body>
+</html>
