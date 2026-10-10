@@ -54,7 +54,7 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="sub">Third Quill for macOS · Last updated 19 September 2026</p>
+  <p class="sub">Third Quill for macOS · Last updated 10 October 2026</p>
 
   <p class="lede">Third Quill does not collect, store, transmit or share any
   personal data. Your PDFs are processed on your Mac and never leave it
@@ -62,10 +62,13 @@
   network connections.</p>
 
   <h2>What the app does</h2>
-  <p>Third Quill opens PDF files you choose and lets you fill in forms, place
-  marks such as seals and highlights, and rotate, reorder, insert or split
-  pages. It can also let an AI assistant running on your Mac do the same work
-  (see below).</p>
+  <p>Third Quill opens PDF files you choose and lets you read and search them,
+  highlight and annotate them, fill in forms, add your signature, a seal, a
+  watermark or an image, redact text, recognize text on scanned pages (OCR),
+  and rotate, reorder, insert, crop or split pages. It can also reduce file
+  size, export pages as images or tables to Excel, and set a password. If you
+  turn it on, it can also let an AI assistant running on your Mac do the same
+  work (see below).</p>
 
   <h2>Data collection</h2>
   <p><strong>None.</strong> Specifically, the app does not collect or process
@@ -80,14 +83,19 @@
 
   <h2>Your documents</h2>
   <p>A PDF you open is held in memory while you work on it. The original file
-  is never modified. The app writes a file only when you choose Save As, and
-  only to the location you choose. Text recognition on scanned pages uses
-  Apple's on-device Vision framework.</p>
+  is never modified: the first save always goes to a new file, at the location
+  you choose, and exports go only where you choose as well. While a document
+  has unsaved changes, the app keeps a backup copy inside its own container on
+  your Mac so your work can be recovered if the app quits unexpectedly; the
+  backup is deleted once you save or discard the changes. Passwords you set are
+  never written to the backup. Text recognition on scanned pages uses Apple's
+  on-device Vision framework.</p>
 
   <h2>Network access</h2>
   <p>The app makes no outbound network connections.</p>
-  <p>It does run a local server (the MCP server) so that an AI assistant on
-  the same Mac can use it. This server listens only on 127.0.0.1, which
+  <p>It can run a local server (the MCP server) so that an AI assistant on
+  the same Mac can use it. The server is off until you turn it on in Settings
+  › AI Assistants. It listens only on 127.0.0.1, which
   cannot be reached from other computers, and runs only while the app is open.
   It can open files only inside folders you have granted in Settings.</p>
 
@@ -100,11 +108,16 @@
   privacy policy. If you don't connect an assistant, nothing leaves the app.</p>
 
   <h2>What is stored on your Mac</h2>
-  <p>The app saves, using the standard macOS user defaults system, the list of
-  folders you have granted to the AI assistant (as security-scoped bookmarks,
-  which let the app reopen those folders after a restart). You can remove them
-  at any time in Settings. This information stays on your Mac and is never
-  transmitted anywhere.</p>
+  <p>Inside its own container on your Mac, the app keeps:</p>
+  <ul>
+    <li>Signatures and seals you draw or import, so you can place them again</li>
+    <li>The list of recently opened files (as security-scoped bookmarks, which
+    let the app reopen them after a restart)</li>
+    <li>The folders you have granted to the AI assistant, also as bookmarks.
+    You can remove them at any time in Settings</li>
+    <li>Backups of unsaved work, as described above</li>
+  </ul>
+  <p>None of this is ever transmitted anywhere.</p>
 
   <h2>Third parties</h2>
   <p>The app contains no third-party SDKs, frameworks, trackers or advertising
