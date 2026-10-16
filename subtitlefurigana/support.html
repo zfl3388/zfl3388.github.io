@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Subtitle Furigana</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1c1e22;
+    --muted: #62666e;
+    --rule: #e4e6ea;
+    --accent: #c2603a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --fg: #e8eaed;
+      --muted: #9aa0aa;
+      --rule: #2a2e35;
+      --accent: #f0956a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 64px 24px 96px; }
+  h1 { font-size: 28px; line-height: 1.25; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); font-size: 14px; margin: 0 0 40px; }
+  h2 { font-size: 17px; margin: 36px 0 10px; letter-spacing: -0.01em; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .lede {
+    border-left: 3px solid var(--accent);
+    padding: 2px 0 2px 16px;
+    margin: 0 0 32px;
+    font-size: 17px;
+  }
+  footer {
+    margin-top: 56px; padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: 14px;
+  }
+  a { color: var(--accent); }
+  .button { display:inline-block; padding:10px 18px; border-radius:8px; background:var(--accent); color:#fff; text-decoration:none; font-weight:600; }
+  kbd { font-family: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Subtitle Furigana Support</h1>
+  <p class="sub">Subtitle Furigana for Mac, iPhone and iPad</p>
+
+  <p class="lede">Found a bug, or have a question or a suggestion? Open a
+  request and it will be answered there. Questions in English, Chinese
+  or Japanese are all welcome.</p>
+
+  <p><a class="button" href="https://github.com/zfl3388/zfl3388.github.io/issues/new?title=%5BSubtitle%20Furigana%5D%20">Contact support</a></p>
+  <p class="sub">Requests are handled through GitHub Issues. A free GitHub
+  account is needed to post one.</p>
+
+  <h2>Getting started</h2>
+  <p><strong>Mac:</strong> open the Subtitle Furigana app, then turn on the
+  extension in Safari ▸ Settings ▸ Extensions. Allow it on
+  youtube.com when Safari asks.</p>
+  <p><strong>iPhone and iPad:</strong> open Settings ▸ Apps ▸ Safari ▸
+  Extensions, turn on Subtitle Furigana and allow it on youtube.com. You can
+  also manage it from the extensions button in Safari's address bar.</p>
+  <p>Then open YouTube in Safari and play a video with Japanese subtitles.
+  Furigana appears over the video automatically.</p>
+
+  <h2>Common questions</h2>
+  <p><strong>No subtitles appear.</strong><br>
+  Check that the video has Japanese subtitles (look in the player's subtitle
+  menu), that the extension is turned on and allowed on youtube.com, then
+  reload the page. If it still doesn't work, YouTube may have changed its
+  site. Please open a request with the video link.</p>
+
+  <p><strong>Keyboard shortcuts (Mac)</strong></p>
+  <ul>
+    <li><kbd>A</kbd> — replay the current line</li>
+    <li><kbd>S</kbd> — auto-pause after every line on or off</li>
+    <li><kbd>D</kbd> — show or hide translations</li>
+    <li><kbd>Esc</kbd> — close the word popup</li>
+  </ul>
+  <p>On iPhone and iPad, the same actions are on-screen buttons.</p>
+
+  <p><strong>The translation doesn't show.</strong><br>
+  Translation uses Apple's on-device translation and needs a one-time
+  language download. Open the Subtitle Furigana app and tap the download
+  button in the translation step. Translations use the first language
+  in your device's language settings other than Japanese, or English if there
+  is none.</p>
+
+  <p><strong>Why are word meanings in English?</strong><br>
+  The built-in dictionary (JMdict) has English definitions. Sentence
+  translations follow your device's language.</p>
+
+  <p><strong>How do I export my words to Anki?</strong><br>
+  Open the app and choose Export for Anki (CSV) under the word list, then
+  import the file into Anki.</p>
+
+  <p><strong>I bought the full version on another device.</strong><br>
+  One purchase works on Mac, iPhone and iPad with the same Apple Account.
+  Open the app and tap Restore Purchase.</p>
+
+  <h2>Credits</h2>
+  <p>Dictionary data: <a href="https://www.edrdg.org/jmdict/j_jmdict.html">JMdict</a>
+  © Electronic Dictionary Research and Development Group, used under
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+  <p>YouTube is a trademark of Google LLC. Subtitle Furigana is not affiliated
+  with or endorsed by YouTube or Google.</p>
+
+  <footer><a href="privacy.html">Privacy Policy</a> · <a href="../">All apps</a></footer>
+</main>
+</body>
+</html>
